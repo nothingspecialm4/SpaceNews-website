@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b0dcf8934e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@100;400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Space News</title>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">
+
+                <h1><a href="#showcase"><span class="span-red"><i class="fas fa-user-astronaut"></i> Space</span>
+                        News</a></h1>
+            </div>
+
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"> <i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+            <ul>
+                <li><a class="current" href="#showcase">Home </a></li>
+                <li><a href="#article">News</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <main id="showcase">
+        <div class="container">
+            <h2>
+                Latest News From Space
+            </h2>
+            <p>If you are passionate about the space, watch our cool articles from beyond orbit </p>
+            <a href="" class="btn"><i class="fas fa-chevron-right"></i> Read More</a>
+        </div>
+
+    </main>
+
+    <section id="article">
+        <div class="container">
+            <h2>Editor Picks</h2>
+            <div class="article-container">
+
+                <artcile class="card box">
+                    <img src="./img/img5.jpg" alt="">
+                    <div>
+                        <h3><a href="radiosignal.html" target="_blank"> Scientists release first analysis of rocks
+                        </h3>
+                        </a>
+                        <p>After a six-year journey, a plucky spacecraft called Hayabusa2 zinged back into Earth's
+                            atmosphere in late 2020 and landed deep in the Australian outback.
+                        </p>
+                    </div>
+                </artcile>
+
+                <artcile class="card box">
+
+                    <div>
+                        <h3><a href="radiosignal.html" target="_blank">Perseverance rover has made a friend on Mars</h3>
+                        </a>
+                        <p>The Perseverance rover made friends with a pet rock about four months ago, and the two have
+                            been inseparable ever since.
+                        </p>
+                    </div>
+                </artcile>
+
+                <artcile class="card box">
+                    <img src="./img/img1.jpg" alt="">
+                    <div>
+                        <h3><a href="radiosignal.html" target="_blank"> Mysterious radio signal detected from space</h3>
+                        </a>
+                        <p>Fast radio bursts are a phenomenon in the field of radio astronomy that refers to a very
+                            short burst of radio pulse associated with the release of a very large amount of energy.
+                        </p>
+                    </div>
+                </artcile>
+
+
+
+                <artcile class="card box">
+                    <img src="./img/img2.jpg" alt="">
+                    <div>
+                        <h3><a href="radiosignal.html" target="_blank">NASA launches UFO study despite</h3>
+                        </a>
+                        <p>The US space agency’s announcement comes as the study of unidentified flying objects gains
+                            more mainstream attention.
+                        </p>
+                    </div>
+                </artcile>
+
+
+
+
+                <artcile class="card box">
+                    <img src="./img/img4.jpg" alt="">
+                    <div>
+                        <h3><a href="radiosignal.html" target="_blank">For the first time in 18 years, 5 planets are
+                                aligned in the night sky </h3>
+                        </a>
+                        <p>Throughout June, sky watchers can see Earth's five closest planetary neighbors in a row with
+                            their naked eyes.
+                        </p>
+                    </div>
+                </artcile>
+
+
+                <artcile class="card box">
+
+                    <div>
+                        <h3><a href="radiosignal.html" target="_blank"> SpaceX’s 23rd launch of the year carries
+                                Egyptian satellite into orbit</h3>
+                        </a>
+                        <p>SpaceX has successfully completed its 23rd rocket launch and landing of 2022, delivering an
+                            Egyptian communications satellite to a nominal geostationary transfer orbit (GTO).
+                        </p>
+                    </div>
+                    <img src="img/img6.jpg" alt="">
+                </artcile>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="#"><span class="span-red"><i class="fas fa-user-astronaut"></i> Space</span> News</a></h1>
+            </div>
+            <div class="email">
+                <h4>Subscribe to be the first to know the breaking news from
+                    space
+                </h4>
+
+                <form>
+                    <input type="email" name="email" id="email" placeholder="Enter Email...">
+                    <input class="btn" type="submit" value="Subscribe">
+                </form>
+            </div>
+            <div class="contact">
+                <p><i class="fa-solid fa-envelope"></i> spacenews@email.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Strada Principala, Ideciu de Jos, Ms</p>
+            </div>
+
+            <div>
+                <p>Copywright &copy; all rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script>
+        $('#navbar a').on('click', function (e) {
+            if (this.hash !== '') {
+                e.preventDefault();
+                const hash = this.hash;
+
+                $('html, body').animate(
+                    {
+                        scrollTop: $(hash).offset().top - 100,
+                    }, 800
+                );
+            }
+        });
+    </script>
+</body>
+
+</html>
