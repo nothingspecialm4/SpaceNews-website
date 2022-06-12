@@ -28,16 +28,45 @@
 
 
     .article-container>:last-child {
-        grid-column: 2/ span 1;
+        grid-column: 1/ span 1;
     }
 
-    .article-container>:nth-child(2) {
+
+
+
+
+    /* contact   */
+    #contact-form .container {
         display: flex;
-        text-align: center;
+        flex-direction: column;
+        width: 100%;
         align-items: center;
         justify-content: center;
+
     }
 
+    #contact-form .email {
+        width: 65%;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 0;
+    }
+
+    #contact-form .form {
+        position: relative;
+        left: 75px;
+        margin: 15px 0;
+    }
+
+    /* ARTICLES */
+    #main-section .content p {
+        padding: 0;
+    }
+
+    .ads {
+        display: none;
+    }
 
 }
 
@@ -55,12 +84,27 @@
         grid-column: 1/ span 1
     }
 
-    #footer .container {
+    #footer .container,
+    #footer .container.footer-contact {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
+
+
+    }
+
+    /* Article page content */
+
+    #main-section .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main-section .content>div,
+    #main-section .content .sidebar {
+        width: 100%;
     }
 
     #footer .container>*:last-child {
@@ -69,12 +113,78 @@
 
     #footer .email {
         padding: 15px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    #navbar {
+        height: 100px;
+    }
+
+    #navbar .social {
+        display: none;
+    }
+
+    #footer .social {
+        display: block;
+    }
+
+    #footer .links {
+        margin-bottom: 15px;
+        margin-top: 15px;
+
+    }
+
+    #footer .container.footer-contact .links {
+        margin: 30px 0;
+    }
+
+    #footer .container>*:nth-child(2),
+    #footer .container>*:nth-child(3) {
+        border-bottom: 1px dotted #444;
+        padding-bottom: 0.8rem;
+        width: 90%;
+    }
+
+
+
+
+    /* Contact */
+    #footer .container.footer-contact>*:nth-child(3) {
+        border: none;
+    }
+
+    #contact-form .form {
+        position: relative;
+        left: 0;
+        width: 90%;
+    }
+
+    #contact-form .email,
+    #contact-form form {
+        width: 100%;
+        margin-top: 15px;
     }
 
 }
 
-@media(max-width:500px) {
-    #navbar .social {
+
+
+@media(max-width:350px) {
+
+    #navbar .logo a {
+        font-size: 1.1rem
+    }
+
+    #navbar .container ul a {
+        font-size: 0.9rem;
+    }
+
+    #showcase>div p {
         display: none;
     }
+
+
+
+
 }

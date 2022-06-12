@@ -59,6 +59,7 @@ h3 {
     margin-top: 10px;
     text-align: center;
     border: none;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .btn:hover {
@@ -89,6 +90,8 @@ h3 {
     color: var(--secondary-color);
 }
 
+
+
 /* Header */
 #navbar {
     background: #222;
@@ -101,6 +104,7 @@ h3 {
     transition: 0.5s;
     opacity: 0.9;
     width: 100%;
+    z-index: 5;
 }
 
 
@@ -143,6 +147,11 @@ h3 {
 
 }
 
+#navbar ul li .current {
+    border-bottom: solid 1px var(--primary-color);
+
+}
+
 /* Showcase */
 
 #showcase {
@@ -177,12 +186,155 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column: 1/ span 2;
+    align-items: center;
+    justify-content: center;
 }
 
 .article-container>:last-child {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column: 1/ span 2;
+    grid-column: 2/ span 2;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Contact Page */
+
+#contact-form h2 {
+    font-size: 2rem;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+
+
+}
+
+#contact-form .container {
+    position: relative;
+}
+
+#contact-form .form input {
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+
+#contact-form .form label {
+    margin-bottom: 10px;
+}
+
+#contact-form .form .btn {
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+#contact-form .email {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 150px;
+    right: 0;
+    width: 30%;
+    text-align: center;
+    border: 1px solid #222;
+    padding: 20px;
+    margin: 0 20px
+}
+
+/* Inner article-1 */
+#header h2 {
+    font-size: 2rem;
+}
+
+#header h4 {
+    font-weight: 1;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+#main-section .content {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+#main-section .content>div {
+    width: 65%;
+}
+
+.content img {
+    margin-top: 30px;
+}
+
+.content p {
+    margin: 30px 0px;
+    font-size: 1.2rem;
+    padding: 0 50px;
+}
+
+.content h4 {
+    padding: 15px 50px;
+    word-spacing: 5px;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+#main-section .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-section .sidebar {
+    width: 30%;
+    margin-top: 50px;
+    border-top: 1px solid #222;
+    padding-top: 10px;
+}
+
+#main-section .sidebar img {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+#main-section .sidebar p {
+    margin: 20px 0;
+    padding: 0;
+
+}
+
+
+#main-section .sidebar i {
+    padding-right: 10px;
+}
+
+.sidebar .ads {
+    margin-top: 150px;
+    border: 1px dotted #222;
+    padding: 15px;
+
+}
+
+
+.span-1>:first-child,
+.span-1>:last-child {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1/ span 1;
+    align-self: start;
+
+}
+
+.span-1>:last-child {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 3/ span 1;
 }
 
 
@@ -195,24 +347,30 @@ h3 {
 
 #footer .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     padding: 30px 0px;
-    align-items: center;
-    text-align: center;
+
+
 }
 
 #footer .email {
     margin-right: 10px;
+    font-size: 1rem;
+
 }
 
 .email input {
-    margin-top: 5px;
+    margin-top: 10px;
     padding: 3px;
     width: 100%;
 }
 
+
+
+
 .email .btn {
     padding: 5px;
+    font-size: 1rem;
 }
 
 #footer .container>*:last-child {
@@ -221,6 +379,54 @@ h3 {
     padding: 5px;
     text-align: center;
     margin-top: 15px;
-    grid-column: 1/ span 3;
+    grid-column: 1/ span 4;
     margin-top: 25px;
+}
+
+#footer .social {
+    display: none;
+}
+
+#footer .links h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#footer .links ul li {
+    border-bottom: 1px dotted #444;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+#footer .links {
+    margin: 0px 30px;
+
+    text-align: center;
+}
+
+#footer .adress {
+    display: flex;
+
+    justify-content: center;
+}
+
+#footer .adress p {
+    padding: 0 20px;
+    text-align: center;
+}
+
+#footer .adress i {
+    padding-bottom: 20px;
+    display: block;
+}
+
+#footer .container.footer-contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+#footer .container.footer-contact .links {
+    margin: 0;
+    margin-right: 50px;
 }
